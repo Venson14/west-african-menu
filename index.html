@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>west-african-menu</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .navbar-nav .nav-link{
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: white;
+            transition: color 0.3s;
+            background-color: #007bff;
+            transform: scale(1.01);
+            border-radius: 5px;
+        }
+        .container{
+            background-image: url('./Restaurant_Interior.png'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 100px; /* Adjust this value based on your navbar height */
+            text-align: center;
+            min-height: 100vh; 
+            min-width: 100%;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+        }
+        .cus-top-51 {
+            position: absolute;
+            top: 350px;
+            left: 50px;
+            transform: translate(-50%, -50%);
+        }
+        .cus-top-52 {
+            position: absolute;
+            top: 230px;
+            left: 50px;
+            transform: translate(-50%, -50%);
+        }
+        .cus-top-53 {
+            position: absolute;
+            top: 230px;
+            left: 50px;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="home-link" href="#">
+                    <img src="./Restaurant_Interior.png" alt="Logo" width="50" height="50" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="menu-search">
+                                <button class="btn btn-outline-secondary" type="submit">
+                                <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                            </form>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <h1 class="text-center text-white">Welcome to Our Restaurant</h1>
+        <p class="text-center text-white">Enjoy the best dining experience with our delicious food and excellent service.</p>
+        <button class="btn btn-primary w-25">Explore Menu</button>
+    </section>
+    <section class="container">
+        <h2 style="text-align: center; border:#007bff 2px solid; box-shadow: 0px 0px 2px 5px rgba(0, 123, 255, 0.5);" class="text-white bg-primary">Our Specialties</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3 food-col">
+                <div class="card h-75 w-100 position-relative">
+                    <img src="./Efo Riro (Nigerian Spinach Stew).jpeg" class="card-img-top" alt="Efo Riro (Nigerian Spinach Stew)">
+                    <div class="card-body overflow-auto">
+                        <h5 class="card-title fw-bold">Efo Riro (Nigerian Spinach Stew)</h5>
+                        <p class="card-text fs-6">It is loaded with an assortment of hearty, flavorful proteins—including tender chicken, rich cow skin (ponmo), and honeycomb tripe (shaki)—all swimming in a luscious palm oil base. Paired perfectly with a smooth, fluffy, and perfectly molded mound of pounded yam, this comforting meal offers an unforgettable balance of textures and deep, authentic flavor..</p>
+                        <button class="btn fav-btn text-secondary cus-top-51">
+                            <i class="bi bi-heart-fill"></i> favorite
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 food-col">
+                <div class="card h-75 w-100">
+                    <img src="./Grilled Whole Fish with Fried Plantains.jpeg" class="card-img-top" alt="Grilled Whole Fish with Fried Plantains">
+                    <div class="card-body overflow-auto">
+                        <h5 class="card-title">Grilled Whole Fish with Fried Plantains</h5>
+                        <p class="card-text">Savor the ultimate coastal comfort food, this dish features a perfectly grilled whole fish, beautifully charred on the outside while remaining tender and flaky on the inside. It is generously slathered in a vibrant, spicy pepper sauce and garnished with a colorful confetti of fresh bell peppers..</p>
+                        <button class="btn fav-btn text-secondary cus-top-52">
+                            <i class="bi bi-heart-fill"></i> favorite
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 food-col">
+                <div class="card h-75 w-100">
+                    <img src="./Goat Meat Pepper Soup.jpeg" class="card-img-top" alt="Goat Meat Pepper Soup">
+                    <div class="card-body overflow-auto">
+                        <h5 class="card-title">Goat Meat Pepper Soup</h5>
+                        <p class="card-text">Turn up the heat with a comforting classic, this is a light, incredibly aromatic, and fiery broth infused with a deeply complex blend of traditional West African spices.</p>
+                        <button class="btn fav-btn text-secondary cus-top-53">
+                            <i class="bi bi-heart-fill"></i> favorite
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="text-center text-white">Contact Us</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label text-white">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-white">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label text-white">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <section class="container">
+        <h2 class="text-center text-white">Follow Us</h2>
+        <div class="d-flex justify-content-center mt-3">
+            <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </section>
+    <footer class="bg-primary text-center text-white py-3">
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-white nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="text-white nav-link">Terms of Service</a></li>
+        </ul>
+        <button class="btn btn-outline-light mt-2"><a href="#home-link" class="text-white nav-link">Back to top</a></button>
+    </footer>
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>   
+<script>
+const favButtons = document.querySelectorAll('.fav-btn');
+favButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        const likeCountSpan = this.querySelector('.like-count');
+        let likeCount = parseInt(likeCountSpan.textContent);
+        likeCount++;
+        likeCountSpan.textContent = likeCount;
+        this.classList.toggle('text-danger');
+        this.classList.toggle('text-secondary');
+        if (this.classList.contains('text-danger')) {
+            this.querySelector('i').classList.add('bi-heart-fill');
+            this.querySelector('i').classList.remove('bi-heart');
+        } else {
+            this.querySelector('i').classList.remove('bi-heart-fill');
+            this.querySelector('i').classList.add('bi-heart');
+        }
+    });
+});
+
+const searchInput = document.getElementById('menu-search');
+const foodCols = document.querySelectorAll('.food-col');
+searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    foodCols.forEach(function(col) {
+        const title = col.querySelector('.card-title').textContent.toLowerCase();
+        if (title.includes(searchTerm)) {
+            col.style.display = '';
+        } else {
+            col.style.display = 'none';
+        }
+    });
+});
+</script>   
+</body>
+</html>
